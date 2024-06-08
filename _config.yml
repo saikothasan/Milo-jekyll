@@ -1,0 +1,31 @@
+title: ok
+description: 
+url: 
+author: benbalter
+logo: 
+
+facebook:
+  app_id: 1234
+  publisher: 1234
+  admins: 1234
+
+twitter:
+  username: benbalter
+  card: summary
+
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+  facebook: 1234
