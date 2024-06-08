@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<!-- page-title -->
+  <main class="main pt-4">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-9">
+
+          <article class="card mb-4">
+            <header class="card-header text-center">
+              <div class="card-meta">
+                <a href="{{ post.url | relative_url }}#"><time class="timeago" datetime="{{page.date | date: '%b %d, %Y'}}">{{page.date | date: '%b %d, %Y'}}</time></a> in <a href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
+              </div>
+              <a href="post-image.html">
+                <h1 class="card-title">{{ page.title | escape }}</h1>
+              </a>
+            </header>
+            {% if page.image %}
+              <img class="card-img" src="{{page.image | relative_url}}" alt="" />
+            {% endif %}
+            <div class="card-body">
+
+              {{ content }}
+
+              <hr />
+
+              <div class="d-flex mb-3 p-3 bg-light">
+              <div class="mt-5">
+                <h5>Write a response</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    {% if site.disqus-identifier %}
+				{% include disqus-comments.html %}
+				{% endif %}
+			</div>
+
+            </div>
+          </article><!-- /.card -->
+
+        </div>
+          {% include sidebar.html %}
+       </div>
+      </div>
+    </div>
+
+  </main>
